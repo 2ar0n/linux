@@ -653,7 +653,7 @@
 			no-map;
 		};
 
-		xbl_mem: xbl85d00000 {
+		xbl_mem: xbl@85d00000 {
 			reg = <0x0 0x85d00000 0x0 0x200000>;
 			no-map;
 		};
@@ -3502,7 +3502,7 @@
 			compatible = "qcom,apss-wdt-sm7150", "qcom,kpss-wdt";
 			reg = <0 0x17c10000 0 0x1000>;
 			clocks = <&sleep_clk>;
-			interrupts = <GIC_SPI 0 IRQ_TYPE_LEVEL_HIGH>;
+			interrupts = <GIC_SPI 0 IRQ_TYPE_EDGE_RISING>;
 		};
 
 		sound: sound { };
